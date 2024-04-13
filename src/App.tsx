@@ -113,13 +113,12 @@ const App = () => {
                             text: "All time solves",
                         },
                         tooltip: {
-                            titleColor: "red",
+                            titleColor: "rgba(120,50,255,0.8)",
                             callbacks: {
-                                label: (context) => {
-                                    return formatSecondsToDuration(
+                                label: (context) =>
+                                    formatSecondsToDuration(
                                         Number(context.formattedValue),
-                                    );
-                                },
+                                    ),
                             },
                         },
                     },
@@ -136,11 +135,10 @@ const App = () => {
                             beginAtZero: true,
                             ticks: {
                                 // stepSize: 15000,
-                                callback: (value) => {
-                                    return formatSecondsToDuration(
+                                callback: (value) =>
+                                    formatSecondsToDuration(
                                         Number(value) / 1000,
-                                    );
-                                },
+                                    ),
                             },
                             grid: {
                                 color: (context) => {
