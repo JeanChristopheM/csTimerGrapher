@@ -1,0 +1,13 @@
+@import "reset";
+
+$dark-grey: #1c1c1c;
+
+body {
+    background-color: $dark-grey;
+    color: white;
+}
+
+input {
+    border: 1px solid white;
+    border-radius: 0.2rem;
+}
